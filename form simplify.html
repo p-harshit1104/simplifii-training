@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <style>
+        
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+      input[type="radio"] {
+        margin-right: 10px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      .error {
+        color: red;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body style="background-image: -moz-radial-gradient();">
+    <h1>Survey Form</h1>
+    <img src="E:\Chrome download\img..jpg">
+    <div class="container">
+        <form action="https://enw7u145b8im9.x.pipedream.net/" method="post">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" required>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+        <label for="pin-code">Pin Code:</label>
+        <input type="number" id="pin-code" name="pin-code" required>
+        <label for="contact-number">Contact Number:</label>
+        <input type="number" id="contact-number" name="contact-number" required>
+        <label>Quality of products received:</label>
+        <input type="radio" id="quality-excellent" name="quality" value="Excellent">
+        <label for="quality-excellent">Excellent</label>
+        <input type="radio" id="quality-good" name="quality" value="Good">
+        <label for="quality-good">Good</label>
+        <input type="radio" id="quality-bad" name="quality" value="Bad">
+        <label for="quality-bad">Bad</label>
+        <br>
+        <label>Value for money:</label>
+        <input type="radio" id="value-excellent" name="value" value="Excellent">
+        <label for="value-excellent">Excellent</label>
+        <input type="radio" id="value-good" name="value" value="Good">
+        <label for="value-good">Good</label>
+        <input type="radio" id="value-bad" name="value" value="Bad">
+        <label for="value-bad">Bad</label>
+        <br>
+        <input type="submit" value="Submit form" id="submit"> 
